@@ -1,6 +1,7 @@
 package com.market.market_user.entity;
 
 import java.io.Serializable;
+
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
@@ -13,8 +14,8 @@ import lombok.experimental.Accessors;
  * (sys_user)实体类
  *
  * @author zhaoyx
- * @since 2020-11-25 10:59:02
  * @description 由 Mybatisplus Code Generator 创建
+ * @since 2020-11-25 10:59:02
  */
 
 @EqualsAndHashCode(callSuper = true)
@@ -28,7 +29,7 @@ public class SysUser extends Model<SysUser> implements Serializable {
      * id
      */
     @TableId
-	private Integer id;
+    private Integer id;
     /**
      * lockedFlag
      */

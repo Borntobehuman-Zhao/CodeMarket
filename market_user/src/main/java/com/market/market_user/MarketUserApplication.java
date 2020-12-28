@@ -11,8 +11,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 @SpringBootApplication
 @MapperScan("com.market.market_user.mapper")
 public class MarketUserApplication {
-	public static void main(String[] args) {
-		SpringApplication.run(MarketUserApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(MarketUserApplication.class, args);
+    }
 }

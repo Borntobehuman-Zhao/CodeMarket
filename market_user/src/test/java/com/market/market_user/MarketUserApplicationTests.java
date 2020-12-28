@@ -10,11 +10,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 class MarketUserApplicationTests {
-	@Autowired
-	SysUserMapper sysUserMapper;
-	@Test
-	void contextLoads() {
-		System.out.println(sysUserMapper.selectById(2L));
-	}
+    @Autowired
+    SysUserMapper sysUserMapper;
+
+    @Test
+    void contextLoads() {
+        System.out.println(sysUserMapper.selectById(2L));
+    }
 
 }

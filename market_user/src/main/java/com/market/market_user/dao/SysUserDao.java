@@ -10,8 +10,8 @@ import org.springframework.stereotype.Repository;
  * (sys_user)数据DAO
  *
  * @author zhaoyx
- * @since 2020-11-25 10:59:02
  * @description 由 Mybatisplus Code Generator 创建
+ * @since 2020-11-25 10:59:02
  */
 @Slf4j
 @Repository

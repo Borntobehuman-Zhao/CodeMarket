@@ -8,9 +8,9 @@ import org.apache.ibatis.annotations.Mapper;
  * (sys_user)数据Mapper
  *
  * @author zhaoyx
- * @since 2020-11-25 10:59:02
  * @description 由 Mybatisplus Code Generator 创建
-*/
+ * @since 2020-11-25 10:59:02
+ */
 @Mapper
 public interface SysUserMapper extends BaseMapper<SysUser> {
 

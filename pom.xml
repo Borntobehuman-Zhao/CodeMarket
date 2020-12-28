@@ -12,6 +12,7 @@
     <description>超级父模块，仅用来管理模块（版本控制），不做任何依赖限制</description>
     <modules>
         <module>market_user</module>
+        <module>market_code</module>
         <module>common</module>
     </modules>
 </project>
