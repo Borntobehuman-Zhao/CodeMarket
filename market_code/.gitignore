@@ -31,3 +31,14 @@ build/
 
 ### VS Code ###
 .vscode/
+
+######################################################################
+# Others
+*.log
+*.xml.versionsBackup
+logs/*
+.DS_Store
+
+!*/build/*.java
+!*/build/*.html
+!*/build/*.xml

@@ -1,22 +1,19 @@
 package com.market.market_user.service.impl;
 
-import com.market.market_user.dao.SysUserDao;
 import com.market.market_user.entity.SysUser;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import com.market.market_user.service.SysUserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.market.market_user.mapper.SysUserMapper;
+import com.market.market_user.service.ISysUserService;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**
- * 服务接口实现
+ * <p>
+ * 系统用户表I 服务实现类
+ * </p>
  *
  * @author zhaoyx
- * @description 由 Mybatisplus Code Generator 创建
- * @since 2020-11-25 10:59:02
+ * @since 2021-03-17
  */
-@Slf4j
-@RequiredArgsConstructor
 @Service
-public class SysUserServiceImpl implements SysUserService {
+public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> implements ISysUserService {
 }

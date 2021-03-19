@@ -2,45 +2,70 @@ package com.market.market_user.entity;
 
 import java.io.Serializable;
 
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 /**
- * (sys_user)实体类
+ * <p>
+ * 系统用户表I
+ * </p>
  *
  * @author zhaoyx
- * @description 由 Mybatisplus Code Generator 创建
- * @since 2020-11-25 10:59:02
+ * @since 2021-03-17
  */
-
-@EqualsAndHashCode(callSuper = true)
 @Data
-@NoArgsConstructor
+@EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("sys_user")
-public class SysUser extends Model<SysUser> implements Serializable {
+public class SysUser implements Serializable {
+
     private static final long serialVersionUID = 1L;
+
+    private int id;
+
+    private String name;
+
+    private String phone;
+
     /**
-     * id
+     * 0代表女，1代表男
      */
-    @TableId
-    private Integer id;
+    private Integer sex;
+
     /**
-     * lockedFlag
+     * 默认值100，小于100无法接受任务
      */
-    private Integer lockedFlag;
+    private Integer credibility;
+
     /**
-     * password
+     * 用户等级，初始等级为1
+     */
+    private Integer level;
+
+    /**
+     * 初始经验为0
+     */
+    private Integer experience;
+
+    /**
+     * 初始用户积累资金为0
+     */
+    private Integer funds;
+
+    /**
+     * 用户所属角色编号
+     */
+    private Integer roleId;
+
+    /**
+     * 用户密码
      */
     private String password;
+
     /**
-     * username
+     * 1是启用，0是不启用
      */
-    private String username;
+    private Integer enableStatus;
+
 
 }
